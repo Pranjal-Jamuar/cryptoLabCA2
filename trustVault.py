@@ -104,6 +104,11 @@ def main():
     recipient = input("Enter recipient name: ").lower()
     message = input("Enter your secret message: ")
 
+    # Check for the specific attack keyword
+    if message.lower() == "pranjal":
+        print("🚨 Attack has happened")
+        return  # Exit the function early
+
     # -------- BEFORE MIDTERM WORK --------
     print("\n🚨🚨🚨 Before Mid Term...")
     print("\n📥 Generating RSA keys...")
